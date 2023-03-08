@@ -1,0 +1,288 @@
+@font-face {
+  font-family: "Sentic Text Bold";
+  src: font-url("/assets/sentic-text-bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Made Waffle Soft";
+  src: font-url("/assets/made-waffle-soft.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Lexend Bold";
+  src: font-url("/assets/lexend-bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Caros";
+  src: font-url("/assets/caros.ttf") format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-button {
+  background-color: #6160f6;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Caros';
+  font-size: 24px;
+  border: 0;
+  border-radius: 16px;
+  color: white;
+  padding: 1.25rem;
+  width: 250px;
+}
+
+.alt-button {
+  background-color: #151c55;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Caros';
+  font-size: 24px;
+  border: 0;
+  border-radius: 16px;
+  color: #5dcef6;
+  padding: 1.25rem;
+  width: 250px;
+}
+
+//--------------------------------------------------------------------- 
+
+.header-banner {
+  height: 3.125rem;
+  width: 100%;
+  background: url("/assets/Mask Group 4.png") center repeat-x ;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header-accents {
+  height: 2.5rem;
+  width: 2.5rem;
+  padding-top: 0.3125rem;
+}
+
+.header-text {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  padding-top: 0.9375rem;
+  font-size: 16px;
+  font-family: 'Sentic Text Bold';
+  color: white;
+}
+
+//--------------------------------------------------------------------- 
+
+.nav-bar {
+  display: flex;
+  height: 100%;
+  padding-top: 0.625rem;
+  padding-left: 0.625rem;
+}
+
+//--------------------------------------------------------------------- 
+
+.first-background {
+  background: url("/assets/banner bg.png") center repeat-x ;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100rem;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+
+.first-background .first-div {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 650px;
+  padding-bottom: 100px;
+}
+
+.first-background .first-div-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 40%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.first-background .first-div-left h1 {
+  font-family: 'Sentic Text Bold';
+  font-size: 64px;
+  color: #151c55;
+  padding-bottom: 20px;
+}
+
+.first-background .first-div-left h2 {
+  font-family: "Made Waffle Soft";
+  color: #6160f6;
+  padding-bottom: 20px;
+}
+
+.first-background .first-div-left p {
+  font-family: 'Sentic Text Bold';
+  color: #151c55;
+  line-height: 1.75;
+  padding-bottom: 20px;
+}
+
+.first-background .first-div-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+//---------------------------------------------------------------------
+
+.first-background .second-div {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 750px;
+}
+
+.first-background .second-div-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.first-background .second-div-left img {
+  height: 100%;
+  padding-left: 250px;
+}
+
+.first-background .second-div-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 40%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.first-background .second-div-right h2 {
+  font-family: "Made Waffle Soft";
+  color: white;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+.first-background .second-div-right p {
+  font-family: 'Sentic Text Bold';
+  color: white;
+  line-height: 1.75;
+  padding-bottom: 20px;
+}
+
+//---------------------------------------------------------------------
+
+.first-background .third-div {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  height: 750px;
+}
+
+.first-background .third-div-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Sentic Text Bold';
+  color: white;
+  padding: 20px;
+}
+
+.first-background .third-div-row h1 {
+  font-size: 40px;
+}
+
+.first-background .third-div-row h2 {
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 60px;
+}
+
+.first-background #client {
+  color: #f6c644;
+}
+
+//---------------------------------------------------------------------
+
+.second-background {
+  background: url("/assets/second-background.png") center repeat-x ;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 180rem;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+
+.second-background .first-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Sentic Text Bold';
+  color: #151c55;
+  width: 40%;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 70px;
+}
+
+.second-background .first-div h1 {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.second-background .first-div p {
+  text-align: center;
+  line-height: 1.75;
+}
+
+//---------------------------------------------------------------------
+
+.second-background .book-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+.second-background .second-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.second-background .second-div h2 {
+  color: white;
+  font-family: 'Made Waffle Soft';
+  padding-top: 30px;
+}
+
+.second-background .second-div h3 {
+  color: #5dcef6;
+  font-family: 'Sentic Text Bold';
+  padding-top: 30px;
+}
+
+.second-background .second-div img {
+  height: 100%;
+  width: 400px;
+}
