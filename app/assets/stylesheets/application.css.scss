@@ -1,11 +1,21 @@
 @font-face {
+  font-family: "Sentic Text";
+  src: font-url("/assets/sentic-text.ttf") format('truetype');
+}
+
+@font-face {
   font-family: "Sentic Text Bold";
   src: font-url("/assets/sentic-text-bold.ttf") format('truetype');
 }
 
 @font-face {
-  font-family: "Made Waffle Soft";
-  src: font-url("/assets/made-waffle-soft.ttf") format('truetype');
+  font-family: "Patricia Gothic";
+  src: font-url("/assets/patricia-gothic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Patricia Gothic Heavy";
+  src: font-url("/assets/patricia-gothic-heavy.ttf") format('truetype');
 }
 
 @font-face {
@@ -23,6 +33,10 @@
   padding: 0;
 }
 
+.body {
+  width: 100%;
+}
+
 .main-button {
   background-color: #6160f6;
   text-align: center;
@@ -34,6 +48,19 @@
   color: white;
   padding: 1.25rem;
   width: 250px;
+}
+
+.small-main-button {
+  background-color: #6160f6;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Caros';
+  font-size: 16px;
+  border: 0;
+  border-radius: 16px;
+  color: white;
+  padding: 1.25rem;
+  width: 150px;
 }
 
 .alt-button {
@@ -71,7 +98,7 @@
   padding-right: 0.625rem;
   padding-top: 0.9375rem;
   font-size: 16px;
-  font-family: 'Sentic Text Bold';
+  font-family: 'Sentic Text';
   color: white;
 }
 
@@ -79,9 +106,90 @@
 
 .nav-bar {
   display: flex;
-  height: 100%;
-  padding-top: 0.625rem;
-  padding-left: 0.625rem;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 8rem;
+  width: 100%;
+}
+
+.nav-bar form {
+  color:#151c55;
+  font-family: 'Sentic Text';
+  padding-right: 7rem;
+}
+
+.nav-bar h3, h2 {
+  color:#151c55;
+  font-family: 'Sentic Text';
+  padding-right: 3rem;
+}
+
+.nav-bar .logo {
+  height: 60px;
+  padding-right: 7rem;
+}
+
+.nav-bar .globe {
+  padding-top: 5px;
+  padding-right: 0.75rem;
+}
+
+//--------------------------------------------------------------------- 
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.footer .first-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .first-div .column {
+  display: flex;
+  flex-direction: column;
+  align-items:baseline;
+  width: 100%;
+  padding: 50px;
+}
+
+.footer .row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.footer .row .left {
+  align-items: flex-start;
+}
+
+.footer .row .right {
+  align-items: flex-end;
+}
+
+.footer .first-div .message {
+  background-color: #5dcef6;
+  border: 1;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 20px; 
+}
+
+.footer .first-div h4 {
+  color: #566073;
+  font-family: 'Sentic Text';
+  padding-top: 1rem;
 }
 
 //--------------------------------------------------------------------- 
@@ -121,7 +229,7 @@
 }
 
 .first-background .first-div-left h2 {
-  font-family: "Made Waffle Soft";
+  font-family: "Patricia Gothic Heavy";
   color: #6160f6;
   padding-bottom: 20px;
 }
@@ -174,14 +282,14 @@
 }
 
 .first-background .second-div-right h2 {
-  font-family: "Made Waffle Soft";
+  font-family: "Patricia Gothic Heavy";
   color: white;
   padding-bottom: 20px;
   font-size: 40px;
 }
 
 .first-background .second-div-right p {
-  font-family: 'Sentic Text Bold';
+  font-family: 'Sentic Text';
   color: white;
   line-height: 1.75;
   padding-bottom: 20px;
@@ -224,12 +332,11 @@
 //---------------------------------------------------------------------
 
 .second-background {
-  background: url("/assets/second-background.png") center repeat-x ;
+  background: url("/assets/second-backgroundddd.png") center repeat-x ;
   background-size: 100% 100%;
   width: 100%;
-  height: 180rem;
+  height: 160rem;
   padding-top: 6.25rem;
-  padding-bottom: 6.25rem;
 }
 
 .second-background .first-div {
@@ -241,11 +348,12 @@
   width: 40%;
   padding-left: 30%;
   padding-right: 30%;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 
 .second-background .first-div h1 {
   font-size: 40px;
+  font-family: 'Sentic Text Bold';
   padding-bottom: 30px;
 }
 
@@ -268,11 +376,12 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  padding-bottom: 70px;
 }
 
 .second-background .second-div h2 {
   color: white;
-  font-family: 'Made Waffle Soft';
+  font-family: 'Patricia Gothic Heavy';
   padding-top: 30px;
 }
 
@@ -285,4 +394,191 @@
 .second-background .second-div img {
   height: 100%;
   width: 400px;
+}
+
+//---------------------------------------------------------------------
+
+.second-background .third-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 350px;
+}
+
+.second-background .third-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.second-background .third-div .first-sub-div {
+  align-items: left;
+  width: 100%;
+  padding-left: 23%;
+  padding-bottom: 100px;
+}
+
+.second-background .third-div .second-sub-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.second-background .third-div .second-sub-div p {
+  line-height: 1.75;
+}
+
+.second-background .third-div .second-sub-div .reasons {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 20%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.second-background .third-div .second-sub-div .reasons img {
+  width: 80px;
+  height: 80px;
+}
+
+.second-background .third-div h1 {
+  color: white;
+  font-family: 'Sentic Text Bold';
+  padding-top: 10px;
+}
+
+.second-background .third-div h3 {
+  color: #f6c644;
+  font-family: 'Sentic Text Bold';
+  padding-top: 30px;
+}
+
+.second-background .third-div h2 {
+  color: white;
+  font-family: 'Sentic Text Bold';
+  padding-top: 30px;
+}
+
+.second-background .third-div p {
+  color: white;
+  font-family: 'Sentic Text';
+  padding-top: 30px;
+}
+
+//---------------------------------------------------------------------
+
+.second-background .fourth-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.second-background .fourth-div h2 {
+  color: #151c55;
+  font-family: 'Sentic Text Bold';
+  padding-top: 30px;
+}
+
+.second-background .fourth-div h4 {
+  color: #5dcef6;
+  font-family: 'Sentic Text';
+  padding-top: 15px;
+}
+
+.second-background .fourth-div .binance-logo {
+  padding-right: 15px;
+}
+
+.second-background .fourth-div .binance {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #898da9;
+  font-family: 'Sentic Text';
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.second-background .fourth-div .review {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: url("/assets/review-background.png") center repeat-x ;
+  background-size: 100% 100%;
+  width: 65%;
+  height: 400px;
+}
+
+.second-background .fourth-div .review .icon {
+  width: 100px;
+  height: 100px;
+}
+
+.second-background .fourth-div .review .star {
+  width: 200px;
+  height: 200px;
+}
+
+.second-background .fourth-div .review h3 {
+  width: 75%;
+  text-align: center;
+  font-family: 'Sentic Text';
+  color: white;
+  padding-top: 10px;
+  line-height: 1.75;
+}
+
+//---------------------------------------------------------------------
+
+.third-background {
+  background-color: #f2f5f8;
+  width: 100%;
+  height: 50rem;
+}
+
+.third-background .first-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px;
+}
+
+.third-background .first-div .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 10px;
+}
+
+.third-background .first-div .row h1 {
+  font-size: 40px;
+  padding-bottom: 30px;
+  color:#151c55;
+  font-family: 'Patricia Gothic Heavy';
+}
+
+.third-background .first-div .row h2 {
+  color: #6160f6;
+  font-family: 'Patricia Gothic Heavy';
+}
+
+.third-background .first-div .row h3 {
+  padding-bottom: 20px;
+  color:#151c55;
+  font-family: 'Patricia Gothic Heavy';
 }

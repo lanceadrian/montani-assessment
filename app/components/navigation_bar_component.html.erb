@@ -1,3 +1,15 @@
 <div class="nav-bar">
-    <img src="/assets/sample logo.svg"/>
+    <img src="/assets/sample logo.svg" class="logo"/>
+    <%= form_with do |form| %>
+        <%= form.text_field :search_query %>
+        <%= form.submit "Search" %>
+    <% end %>
+    <h3> Home </h3>
+    <h3> Rent Textbooks </h3>
+    <h3> Buy Textbooks </h3>
+    <h3> Sell Textbooks </h3>
+    <h2 class="divider"> | </h2>
+    <img src="/assets/Icon feather-globe.svg" class="globe"/>
+    <h3> En </h3>
+    <button class="small-main-button"> Contact </button>
 </div>
