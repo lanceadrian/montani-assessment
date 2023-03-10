@@ -3,10 +3,16 @@
         <div class="column">
             <img src="/assets/sample logo.svg"/>
             <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </p>
-            <%= form_with do |form| %>
-                <%= form.text_field :email %>
-                <%= form.submit "Search" %>
-            <% end %>
+            <div class="email">
+                <%= form_with do |form| %>
+                    <div class="form-design">
+                        <%= form.text_field :email, :class => 'text-field', placeholder: "Email" %>
+                        <button type="submit">
+                            <img src="/assets/Icon feather-search.svg" class="search-icon"/>
+                        </button>
+                    </div>
+                <% end %>
+            </div>
         </div>
         <div class="column">
             <h2> Menu </h2>
@@ -42,9 +48,9 @@
             <h3> © 2022 Brainly. </h3>
         </div>
         <div class="right">
-            <img src="/assets/facebook (3).svg" class="message"/>
-            <img src="/assets/linkedin (1).svg" class="message"/>
-            <img src="/assets/Logo_00000038394049246713568260000012923108920998390947_.svg" class="message"/>
+            <img src="/assets/facebook (3).svg" class="social-media"/>
+            <img src="/assets/linkedin (1).svg" class="social-media"/>
+            <img src="/assets/Logo_00000038394049246713568260000012923108920998390947_.svg" class="social-media"/>
         </div>
     </div>
 </div>

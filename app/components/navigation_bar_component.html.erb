@@ -1,15 +1,19 @@
 <div class="nav-bar">
     <img src="/assets/sample logo.svg" class="logo"/>
     <%= form_with do |form| %>
-        <%= form.text_field :search_query %>
-        <%= form.submit "Search" %>
+        <div class="form-design">
+            <button type="submit">
+                <img src="/assets/Icon feather-search.svg" class="search-icon"/>
+            </button>
+            <%= form.text_field :search_query, :class => 'text-field', placeholder: "Search" %>
+        </div>
     <% end %>
-    <h3> Home </h3>
-    <h3> Rent Textbooks </h3>
-    <h3> Buy Textbooks </h3>
-    <h3> Sell Textbooks </h3>
-    <h2 class="divider"> | </h2>
+    <h4> Home </h4>
+    <h4> Rent Textbooks </h4>
+    <h4> Buy Textbooks </h4>
+    <h4> Sell Textbooks </h4>
+    <h3 class="divider"> | </h3>
     <img src="/assets/Icon feather-globe.svg" class="globe"/>
-    <h3> En </h3>
+    <h4> En </h4>
     <button class="small-main-button"> Contact </button>
 </div>
