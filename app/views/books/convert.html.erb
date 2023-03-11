@@ -1,0 +1,27 @@
+<%= render(HeaderComponent.new) %>
+
+<% if flash[:notice] %>
+    <div class="notification-bar">
+        <div class="alert">
+            <%= flash[:notice] %>
+        </div>
+    </div>
+<% end %>
+
+<div class="convert">
+    <h1> Convert ISBN </h1>
+    <h2> Putting ISBN-10 will convert it to ISBN-13 and vice versa </h2>
+    <%= form_with url: convert_isbn_path do |form| %>
+        <div class="form-design">
+            <button type="submit">
+                <img src="/assets/Icon feather-search.svg" class="search-icon"/>
+            </button>
+            <%= form.text_field :isbn, :class => 'text-field', placeholder: "ISBN", required: true%>
+        </div>
+    <% end %>
+    <% if @result %>
+        <h2> <%= @isbn %> converted is <%= @result %> </h2>
+    <% end %>
+</div>
+
+<%= render(FooterComponent.new) %>

@@ -28,9 +28,13 @@
   src: font-url("/assets/caros.ttf") format('truetype');
 }
 
+//------------------------------------------------------------------------------------------------------------------------------------------
+
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 html, body {
@@ -100,7 +104,25 @@ form button {
   border: 0;
 }
 
-//--------------------------------------------------------------------- 
+.notification-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background-color: #e4cdcd;
+  color: #884b48;
+  font-family: "Sentic Text Bold";
+  width: 200px;
+  border-radius: 30px;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
 
 .header-banner {
   height: 3.125rem;
@@ -126,7 +148,7 @@ form button {
   color: white;
 }
 
-//--------------------------------------------------------------------- 
+//------------------------------------------------------------------------------------------------------------------------------------------
 
 .nav-bar {
   display: flex;
@@ -134,7 +156,7 @@ form button {
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 10px;
   width: 100%;
 }
 
@@ -154,9 +176,12 @@ form button {
   padding-right: 3%;
 }
 
+.nav-bar .logo-div {
+  padding-right: 6%;  
+}
+
 .nav-bar .logo {
   height: 60px;
-  padding-right: 6%;
 }
 
 .nav-bar .globe {
@@ -164,7 +189,7 @@ form button {
   padding-right: 0.5%;
 }
 
-//--------------------------------------------------------------------- 
+//------------------------------------------------------------------------------------------------------------------------------------------
 
 .footer {
   display: flex;
@@ -178,16 +203,22 @@ form button {
 .footer .first-div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .footer .first-div .column {
   display: flex;
   flex-direction: column;
   align-items:baseline;
-  width: 100%;
+  width: 90%;
   padding: 50px;
+}
+
+.footer .first-div .down {
+  padding-top: 190px;
+  text-align: right;
+  float: right;
 }
 
 .footer form {
@@ -203,7 +234,8 @@ form button {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  padding: 20px; 
+  padding: 20px;
+  overflow: visible;
 }
 
 .footer .first-div h4 {
@@ -248,8 +280,15 @@ form button {
   padding-right: 100px;
 }
 
+.footer .row .right .img-spacing {
+  float: right;
+  padding-right: 10px;
+}
+
 .footer .row .right img {
   float: right;
+  height: 20px;
+  width: 20px;
 }
 
 .social-media {
@@ -258,9 +297,10 @@ form button {
   border-style: solid;
   border-radius: 50%;
   background-color: #f2f2ff;
+  overflow: visible;
   padding: 30px;
 }
-//--------------------------------------------------------------------- 
+//------------------------------------------------------------------------------------------------------------------------------------------
 
 .first-background {
   background: url("/assets/banner bg.png") center repeat-x ;
@@ -272,6 +312,7 @@ form button {
 }
 
 .first-background .first-div {
+  justify-content: center;
   box-sizing: border-box;
   display: flex;
   width: 100%;
@@ -283,7 +324,6 @@ form button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
   width: 40%;
   padding-left: 100px;
   padding-right: 100px;
@@ -317,9 +357,10 @@ form button {
   width: 60%;
 }
 
-//---------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------------
 
 .first-background .second-div {
+  justify-content: center;
   box-sizing: border-box;
   display: flex;
   width: 100%;
@@ -336,7 +377,6 @@ form button {
 
 .first-background .second-div-left img {
   height: 100%;
-  padding-left: 250px;
 }
 
 .first-background .second-div-right {
@@ -363,7 +403,7 @@ form button {
   padding-bottom: 20px;
 }
 
-//---------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------------
 
 .first-background .third-div {
   display: flex;
@@ -397,8 +437,7 @@ form button {
   color: #f6c644;
 }
 
-//---------------------------------------------------------------------
-
+//------------------------------------------------------------------------------------------------------------------------------------------
 .second-background {
   background: url("/assets/second-backgroundddd.png") center repeat-x ;
   background-size: 100% 100%;
@@ -430,7 +469,7 @@ form button {
   line-height: 1.75;
 }
 
-//---------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------------
 
 .second-background .book-details {
   display: flex;
@@ -464,7 +503,7 @@ form button {
   width: 400px;
 }
 
-//---------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------------
 
 .second-background .third-div {
   display: flex;
@@ -540,7 +579,7 @@ form button {
   padding-top: 30px;
 }
 
-//---------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------------
 
 .second-background .fourth-div {
   display: flex;
@@ -608,7 +647,7 @@ form button {
   line-height: 1.75;
 }
 
-//---------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------------
 
 .third-background {
   background-color: #f2f5f8;
@@ -649,4 +688,106 @@ form button {
   padding-bottom: 20px;
   color:#151c55;
   font-family: 'Patricia Gothic Heavy';
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+.show {
+  width: 100%;
+  height: 40rem;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+.show .first-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 4%;
+}
+
+.show .first-div h1 {
+  font-size: 50px;
+  color:#151c55;
+  font-family: 'Patricia Gothic Heavy';
+}
+
+.show .second-div .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.show .second-div .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.show .second-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.show .second-div .left {
+  justify-content: center;
+  padding-right: 5%;
+}
+
+.show .second-div .left img {
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.show .second-div .book-title {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 7%;
+}
+
+.show .second-div .book-authors {
+  display: flex;
+  flex-direction: column;
+}
+.show .second-div .book-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.show .second-div h1 {
+  color:#151c55;
+  font-family: 'Patricia Gothic Heavy';
+}
+
+.show .second-div h2 {
+  color:#151c55;
+  font-family: 'Sentic Text Bold';
+  padding-bottom: 50px;
+}
+
+.show .second-div .description {
+  color:#151c55;
+  font-family: 'Sentic Text Bold';
+  padding-bottom: 20px;
+}
+
+.show .second-div .value {
+  color:#5dcef6;
+  font-family: 'Sentic Text Bold';
+  padding-bottom: 20px;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+.convert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.convert h1, h2, form {
+  color:#151c55;
+  font-family: 'Sentic Text Bold';
+  padding-bottom: 20px;
 }

@@ -1,26 +1,21 @@
 class Book < ApplicationRecord
-    belongs_to :authors
+    # include PgSearch::Model
+    # pg_search_scope :search_by_isbn, against: [:isbn_13]
+    
+    has_and_belongs_to_many :authors
+    belongs_to :publisher
+    delegate :name, to: :publisher, prefix: true
 
-    validates_presence_of :title, :list_price, :publication_year, :publisher, :authors
-    validates :isbn_10, presence: true, uniqueness: true
+    validates_presence_of :title, :list_price, :publication_year, :publisher
     validates :isbn_13, presence: true, uniqueness: true
+    validate :valid_isbn_13
 
-    validate :valid_isbn_10, :valid_isbn_13
-
-    def valid_isbn_10
-        isbn = isbn_10.delete('^0-9')
-        isbn_array = isbn.split("")
-
-        total = 0
-        isbn_array.each_with_index { |number, index| total += (10 - index) * number.to_i }
-
-        return ( total % 11 ? true : false )
-    end
+    private
 
     def valid_isbn_13
-        isbn = isbn_13.delete('^0-9')
-        isbn_array = isbn.split("")
-    
+        trimmed_isbn = isbn_13.delete('^0-9')
+        isbn_array = trimmed_isbn.split("")
+
         total = 0
         isbn_array.each_with_index do |number, index|
             if index == 0 || index.even?

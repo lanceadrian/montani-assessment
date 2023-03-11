@@ -5,10 +5,11 @@ class CreateBooks < ActiveRecord::Migration[7.0]
       t.string :isbn_10
       t.string :isbn_13, null: false
       t.integer :list_price, null: false
-      t.integer :publication_year, null: false
-      t.string :publisher, null: false
-
-      t.references :authors, null: false
+      t.string :publication_year, null: false
+      t.string :image_url
+      t.string :edition
+      
+      t.references :publisher, null: false
       t.timestamps
     end
   end

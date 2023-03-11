@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   resources :books, only: [:show]
-  resources :homepages, only: [:index]
 
-  root "homepages#index"
+  post '/search', to: "books#search"
+  get '/convert', to: "books#convert"
+  post '/convert_isbn', to: "books#convert_isbn"
+
+  root "books#index"
 end

@@ -1,5 +1,13 @@
 <%= render(HeaderComponent.new) %>
 
+<% if flash[:notice] %>
+    <div class="notification-bar">
+        <div class="alert">
+            <%= flash[:notice] %>
+        </div>
+    </div>
+<% end %>
+
 <div class="body">
     <div class="first-background">
         <div class="first-div">

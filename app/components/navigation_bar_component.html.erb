@@ -1,14 +1,18 @@
 <div class="nav-bar">
-    <img src="/assets/sample logo.svg" class="logo"/>
-    <%= form_with do |form| %>
+    <div class="logo-div">
+        <%= link_to root_path do %>
+            <img src="/assets/sample logo.svg" class="logo"/>
+        <% end %>
+    </div>
+    <%= form_with url: search_path do |form| %>
         <div class="form-design">
             <button type="submit">
                 <img src="/assets/Icon feather-search.svg" class="search-icon"/>
             </button>
-            <%= form.text_field :search_query, :class => 'text-field', placeholder: "Search" %>
+            <%= form.text_field :isbn, :class => 'text-field', placeholder: "Search", required: true%>
         </div>
     <% end %>
-    <h4> Home </h4>
+    <h4><%= link_to root_path do %> Home <% end %></h4>
     <h4> Rent Textbooks </h4>
     <h4> Buy Textbooks </h4>
     <h4> Sell Textbooks </h4>

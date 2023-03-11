@@ -1,10 +1,54 @@
-<p style="color: green"><%= notice %></p>
+<%= render(HeaderComponent.new) %>
 
-<%= render @book %>
+<% if flash[:notice] %>
+    <div class="notification-bar">
+        <div class="alert">
+            <%= flash[:notice] %>
+        </div>
+    </div>
+<% end %>
 
-<div>
-  <%= link_to "Edit this book", edit_book_path(@book) %> |
-  <%= link_to "Back to books", books_path %>
+<div class="show">
+  <div class="first-div">
+    <h1>Search Results</h1>
+  </div>
+  <div class="second-div">
+    <div class="left row">
+      <img src= <%= @book.image_url %> > 
+    </div>
+    <div class="column">
+      <div class="book-title">
+        <h1> <%= @book.title %> </h1>
+      </div>
 
-  <%= button_to "Destroy this book", @book, method: :delete %>
+      <div class="book-authors">
+        <h2> <%= author_display(@book.authors) %> </h2>
+      </div>
+
+      <div class="book-details">
+        <div class= "row">
+          <h3 class="description"> Edition:&nbsp </h3>
+          <h3 class="value"> <%= @book.edition %> </h3>
+        </div>
+        <div class= "row">
+          <h3 class="description"> Price: PHP&nbsp </h3>
+          <h3 class="value"> <%= @book.list_price %> </h3>
+        </div>
+        <div class= "row">
+          <h3 class="description"> ISBN:&nbsp </h3>
+          <h3 class="value"> <%= @book.isbn_13 %> </h3>
+        </div>
+        <div class= "row">
+          <h3 class="description"> Publication Year:&nbsp </h3>
+          <h3 class="value"> <%= @book.publication_year %> </h3>
+        </div>
+        <div class= "row">
+          <h3 class="description"> Publisher:&nbsp </h3>
+          <h3 class="value"> <%= @book.publisher_name %> </h3>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<%= render(FooterComponent.new) %>
