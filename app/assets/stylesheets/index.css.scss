@@ -1,0 +1,490 @@
+
+.first-background {
+    background: url("/assets/banner bg.png") center repeat-x ;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100rem;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+
+.first-background .first-div {
+    justify-content: center;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 40.625rem;
+    padding-bottom: 6.25rem;
+}
+
+.first-background .first-div-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+}
+
+.first-background .first-div-left h1 {
+    font-family: 'Sentic Text Bold';
+    font-size: 4rem;
+    color: #151c55;
+    padding-bottom: 1.25rem;
+}
+
+.first-background .first-div-left h2 {
+    font-family: "Patricia Gothic Heavy";
+    color: #6160f6;
+    padding-bottom: 1.25rem;
+}
+
+.first-background .first-div-left p {
+font-family: 'Sentic Text Bold';
+color: #151c55;
+line-height: 1.75;
+padding-bottom: 1.25rem;
+}
+
+.first-background .first-div-right {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 60%;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+.first-background .second-div {
+justify-content: center;
+box-sizing: border-box;
+display: flex;
+width: 100%;
+height: 46.875rem;
+}
+
+.first-background .second-div-left {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 60%;
+}
+
+.first-background .second-div-left img {
+height: 100%;
+}
+
+.first-background .second-div-right {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: left;
+width: 40%;
+padding-left: 6.25rem;
+padding-right: 6.25rem;
+}
+
+.first-background .second-div-right h2 {
+font-family: "Patricia Gothic Heavy";
+color: white;
+padding-bottom: 1.25rem;
+font-size: 2.5rem;
+}
+
+.first-background .second-div-right p {
+font-family: 'Sentic Text';
+color: white;
+line-height: 1.75;
+padding-bottom: 1.25rem;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+.first-background .third-div {
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+width: 100%;
+height: 46.875rem;
+}
+
+.first-background .third-div-row {
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+font-family: 'Sentic Text Bold';
+color: white;
+padding: 1.25rem;
+}
+
+.first-background .third-div-row h1 {
+font-size: 2.5rem;
+}
+
+.first-background .third-div-row h2 {
+padding-top: 0.625rem;
+padding-left: 0.938rem;
+padding-right: 3.75rem;
+}
+
+.first-background #client {
+color: #f6c644;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+.second-background {
+background: url("/assets/second-backgroundddd.png") center repeat-x ;
+background-size: 100% 100%;
+width: 100%;
+height: 160rem;
+padding-top: 6.25rem;
+}
+
+.second-background .first-div {
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: 'Sentic Text Bold';
+color: #151c55;
+width: 40%;
+padding-left: 30%;
+padding-right: 30%;
+padding-bottom: 3.125rem;
+}
+
+.second-background .first-div h1 {
+font-size: 2.5rem;
+font-family: 'Sentic Text Bold';
+padding-bottom: 1.875rem;
+}
+
+.second-background .first-div p {
+text-align: center;
+line-height: 1.75;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+.second-background .book-details {
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 1.875rem;
+}
+
+.second-background .second-div {
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+padding-bottom: 4.375rem;
+}
+
+.second-background .second-div h2 {
+color: white;
+font-family: 'Patricia Gothic Heavy';
+padding-top: 1.875rem;
+}
+
+.second-background .second-div h3 {
+color: #5dcef6;
+font-family: 'Sentic Text Bold';
+padding-top: 1.875rem;
+}
+
+.second-background .second-div img {
+height: 100%;
+width: 25rem;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+.second-background .third-div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+padding-bottom: 21.875rem;
+}
+
+.second-background .third-div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+.second-background .third-div .first-sub-div {
+align-items: left;
+width: 100%;
+padding-left: 23%;
+padding-bottom: 6.25rem;
+}
+
+.second-background .third-div .second-sub-div {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+.second-background .third-div .second-sub-div p {
+line-height: 1.75;
+}
+
+.second-background .third-div .second-sub-div .reasons {
+display: flex;
+flex-direction: column;
+align-items: baseline;
+width: 20%;
+padding-left: 3.75rem;
+padding-right: 3.753.75;
+}
+
+.second-background .third-div .second-sub-div .reasons img {
+width: 5rem;
+height: 5rem;
+}
+
+.second-background .third-div h1 {
+color: white;
+font-family: 'Sentic Text Bold';
+padding-top: 0.625rem;
+}
+
+.second-background .third-div h3 {
+color: #f6c644;
+font-family: 'Sentic Text Bold';
+padding-top: 1.875rem;
+}
+
+.second-background .third-div h2 {
+color: white;
+font-family: 'Sentic Text Bold';
+padding-top: 1.875rem;
+}
+
+.second-background .third-div p {
+color: white;
+font-family: 'Sentic Text';
+padding-top: 1.875rem;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+.second-background .fourth-div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+.second-background .fourth-div h2 {
+color: #151c55;
+font-family: 'Sentic Text Bold';
+padding-top: 1.875rem;
+}
+
+.second-background .fourth-div h4 {
+color: #5dcef6;
+font-family: 'Sentic Text';
+padding-top: 0.938rem;
+}
+
+.second-background .fourth-div .binance-logo {
+padding-right: 0.938rem;
+}
+
+.second-background .fourth-div .binance {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 100%;
+color: #898da9;
+font-family: 'Sentic Text';
+padding-top: 1.875rem;
+padding-bottom: 1.875rem;
+}
+
+.second-background .fourth-div .review {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+background: url("/assets/review-background.png") center repeat-x ;
+background-size: 100% 100%;
+width: 65%;
+height: 25rem;
+}
+
+.second-background .fourth-div .review .icon {
+width: 6.25rem;
+height: 6.25rem;
+}
+
+.second-background .fourth-div .review .star {
+width: 12.5rem;
+height: 12.5rem;
+}
+
+.second-background .fourth-div .review h3 {
+width: 75%;
+text-align: center;
+font-family: 'Sentic Text';
+color: white;
+padding-top: 0.625rem;
+line-height: 1.75;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+.third-background {
+background-color: #f2f5f8;
+width: 100%;
+height: 50rem;
+}
+
+.third-background .first-div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 12.5rem;
+}
+
+.third-background .first-div .row {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 80%;
+padding: 0.625rem;
+}
+
+.third-background .first-div .row h1 {
+font-size: 2.5rem;
+padding-bottom: 1.875rem;
+color:#151c55;
+font-family: 'Patricia Gothic Heavy';
+}
+
+.third-background .first-div .row h2 {
+color: #6160f6;
+font-family: 'Patricia Gothic Heavy';
+}
+
+.third-background .first-div .row h3 {
+padding-bottom: 1.25rem;
+color:#151c55;
+font-family: 'Patricia Gothic Heavy';
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+.show {
+width: 100%;
+height: 40rem;
+padding-top: 5%;
+padding-left: 10%;
+padding-right: 10%;
+padding-bottom: 5%;
+}
+
+.show .first-div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-bottom: 4%;
+}
+
+.show .first-div h1 {
+font-size: 3.125rem;
+color:#151c55;
+font-family: 'Patricia Gothic Heavy';
+}
+
+.show .second-div .row {
+display: flex;
+flex-direction: row;
+}
+
+.show .second-div .column {
+display: flex;
+flex-direction: column;
+}
+
+.show .second-div {
+display: flex;
+flex-direction: row;
+}
+
+.show .second-div .left {
+justify-content: center;
+padding-right: 5%;
+}
+
+.show .second-div .left img {
+width: 21.875rem;
+height: 31.25rem;
+border-radius: 0.625rem;
+}
+
+.show .second-div .book-title {
+display: flex;
+flex-direction: column;
+padding-bottom: 7%;
+}
+
+.show .second-div .book-authors {
+display: flex;
+flex-direction: column;
+}
+.show .second-div .book-details {
+display: flex;
+flex-direction: column;
+}
+
+.show .second-div h1 {
+color:#151c55;
+font-family: 'Patricia Gothic Heavy';
+}
+
+.show .second-div h2 {
+color:#151c55;
+font-family: 'Sentic Text Bold';
+padding-bottom: 3.125rem;
+}
+
+.show .second-div .description {
+color:#151c55;
+font-family: 'Sentic Text Bold';
+padding-bottom: 1.25rem;
+}
+
+.show .second-div .value {
+color:#5dcef6;
+font-family: 'Sentic Text Bold';
+padding-bottom: 1.25rem;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+.convert {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.convert h1, h2, form {
+color:#151c55;
+font-family: 'Sentic Text Bold';
+padding-bottom: 1.25rem;
+}

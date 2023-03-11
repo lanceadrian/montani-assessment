@@ -1,0 +1,64 @@
+.header-banner {
+    height: 3.125rem;
+    width: 100%;
+    background: url("/assets/Mask Group 4.png") center repeat-x ;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-accents {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding-top: 0.3125rem;
+}
+
+.header-text {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    padding-top: 0.9375rem;
+    font-size: 1rem;
+    font-family: 'Sentic Text';
+    color: white;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 0.625rem;
+    width: 100%;
+}
+
+.nav-bar form {
+    color:#151c55;
+    font-family: 'Sentic Text';
+    padding-right: 6%;
+}
+
+.nav-bar .search-icon {
+    padding-right: 0.625rem;
+}
+
+.nav-bar h3, h4 {
+    color:#151c55;
+    font-family: 'Sentic Text';
+    padding-right: 3%;
+}
+
+.nav-bar .logo-div {
+    padding-right: 6%;  
+}
+
+.nav-bar .logo {
+    height: 3.75rem;
+}
+
+.nav-bar .globe {
+    padding-top: 0.313rem;
+    padding-right: 0.5%;
+}
