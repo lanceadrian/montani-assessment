@@ -3,7 +3,7 @@ class BooksController < ApplicationController
   end
 
   def show
-    @book = Book.find_by(id: params[:id])
+    @book = Book.find_by(isbn_13: params[:id])
   end
 
   def convert
@@ -36,7 +36,7 @@ class BooksController < ApplicationController
       book = find_book(isbn)
       if book
         respond_to do |format|
-          format.html { redirect_to book_url(book)}
+          format.html { redirect_to book_url(book.isbn_13)}
           format.json { render :show, status: 302 }
         end
       else
